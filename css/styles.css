@@ -1,0 +1,129 @@
+*,
+:after,
+:before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Karla", sans-serif;
+  background-color: hsl(204, 43%, 93%);
+  display: flex;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+main {
+  width: 632px;
+  display: grid;
+  grid-template-columns: 316px 316px;
+  grid-template-rows: 200px 250px;
+  box-shadow: 2px 2px 5px rgba(73, 72, 72, 0.473);
+  border-radius: 10px;
+}
+
+/* /////heading section///// */
+h4 {
+  color: hsl(179, 62%, 43%);
+  margin-bottom: 25px;
+  font-size: 22px;
+  font-weight: 600;
+}
+.header {
+  background-color: #fff;
+  grid-column: 1/4;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 35px;
+}
+.yellow-line {
+  color: hsl(71, 73%, 54%);
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+.header-text {
+  color: hsl(218, 22%, 67%);
+}
+
+/* /////price-section///// */
+.price-section h5 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.price {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+span {
+  font-size: 14px;
+  color: hsl(179, 61%, 68%);
+  display: inline-block;
+}
+.price-section {
+  background-color: hsl(179, 62%, 43%);
+  border-bottom-left-radius: 10px;
+  color: #fff;
+  padding: 35px;
+}
+
+.btn {
+  border: 0;
+  line-height: 2.5;
+  padding: 5px 90px;
+  color: #fff;
+  font-size: 14px;
+  background-color: hsl(71, 73%, 54%);
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(73, 72, 72, 0.473);
+  text-align: center;
+  position: relative;
+  top: 30px;
+}
+.btn:hover {
+  background-color: hsl(71, 57%, 54%);
+}
+
+/* //////features section////// */
+.features {
+  background-color: hsl(179, 62%, 45%);
+  border-bottom-right-radius: 10px;
+  padding: 35px;
+}
+.features h5 {
+  color: aliceblue;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.features p {
+  color: hsl(202, 17%, 87%);
+  font-size: 14px;
+  line-height: 1.5;
+}
+/*footer section*/
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 25%;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 750px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+  }
+
+  .price-section {
+    height: 250px;
+    border-radius: 0;
+  }
+  .features {
+    border-bottom-left-radius: 10px;
+  }
+}
